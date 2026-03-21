@@ -1,0 +1,17 @@
+l1=[9,9,9,9,9,9,9]
+l2=[9,9,9,9]
+num1=0
+num2=0
+while(len(l1)!=0):
+    num1=num1*10+l1[len(l1)-1]
+    l1.pop()
+while(len(l2)!=0):
+    num2=num2*10+l2[len(l2)-1]
+    l2.pop()
+num1=num1+num2
+final=[]
+while(num1!=0):
+    r=num1%10
+    num1//=10
+    final.append(r)
+print(final)
